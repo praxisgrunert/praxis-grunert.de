@@ -196,10 +196,14 @@ nav.navbar-default .navbar-nav > li > a {
     letter-spacing: 1.1px;
 }
 nav.navbar-default .navbar-nav > li.active > a,
+nav.navbar-default .navbar-nav > li.active > a:hover,
+nav.navbar-default .navbar-nav > li.active > a:focus,
+nav.navbar-default .navbar-nav > li.active > a:active,
 nav.navbar-default .navbar-nav > li > a:hover,
 nav.navbar-default .navbar-nav > li > a:focus,
 nav.navbar-default .navbar-nav > li > a:active {
     color: #00acd6 !important;
+    background-color: inherit;
 }
 nav.navbar-default .navbar-nav li:last-child > a {
     padding-right: 0;
@@ -475,7 +479,7 @@ body.aaron-illu .media-heading {
 
 @media (min-width: 768px) {
     .modal-dialog {
-        width: 640px;
+        width: 680px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -505,6 +509,51 @@ body.aaron-illu .media-heading {
     font-weight: 300;
     text-align: right;
     vertical-align: middle;
+}
+
+.modal  .overlay {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.modal  .overlay .line {
+    display: inline-block;
+    padding: 8px 20px 8px 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    background-color: #4cadd3;
+    color: #fff;
+}
+
+.modal  .overlay .line:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.modal .modal-body .content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal .modal-body .headline {
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    .modal .modal-body .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .modal .modal-body .headline {
+        margin-top: 0;
+    }
+
 }
 
 .modal .modal-body p {
@@ -577,15 +626,19 @@ body.aaron-illu .media-heading {
     }
 }
 
-/* Job */
-.job h5 {
+/* Karriere */
+.karriere .karriere-full-image-wrapper img {
+    width: 100%;
+}
+
+.karriere h5 {
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: bold;
     color: #00acd6;
 }
 
-.job .btn {
+.karriere .btn {
     display: block;
     width: 160px;
     background-color: #4cadde;
@@ -594,18 +647,18 @@ body.aaron-illu .media-heading {
     text-transform: uppercase;
 }
 
-.job .btn:active,
-.job .btn:focus,
-.job .btn:hover {
+.karriere .btn:active,
+.karriere .btn:focus,
+.karriere .btn:hover {
     opacity: 0.8;
 }
 
-.job .box.box-beige {
+.karriere .box.box-beige {
     padding: 40px;
     background-color: #fbf7f3;
 }
 
-.job .box.box-blue {
+.karriere .box.box-blue {
     padding: 40px;
     background-color: rgba(76, 173, 211, 0.1);
 }
