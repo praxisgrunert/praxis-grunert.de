@@ -61,7 +61,15 @@
     </nav>
     <article>
         <section>
-            <div class="karriere-full-image-wrapper"><img src="./assets/images/karriere.jpg" srcset="./assets/images/karriere.jpg 970w, ./assets/images/karriere.jpg 1940w" class="img-responsive" alt="Praxis"></div>
+            <div class="karriere-full-image-wrapper">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="assets/images/praxis_02_320.jpg, assets/images/praxis_02_320@2x.jpg 2x">
+                    <source media="(max-width: 640px)" srcset="assets/images/praxis_02_640.jpg, assets/images/praxis_02_640@2x.jpg 2x">
+                    <source media="(max-width: 800px)" srcset="assets/images/praxis_02_800.jpg, assets/images/praxis_02_800@2x.jpg 2x">
+                    <source srcset="assets/images/praxis_02.jpg, assets/images/praxis_02@2x.jpg 2x">
+                    <img src="assets/images/praxis_02.jpg" class="img-responsive img-center" alt="Praxis 02">
+                </picture>
+            </div>
             <div class="container">
                 <div class="row" style="margin-top: 70px;">
                     <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -88,8 +96,8 @@
                 </div>
             </div>
 
-            <div class="container-fluid px-0">
-                <div class="row" style="margin-bottom: 40px;">
+            <div class="container-fluid">
+                <div class="row bg-beige" style="margin-bottom: 40px;">
                     <div class="col-xs-12 col-lg-8 col-lg-offset-2">
                         <div class="box box-beige">
                             <h2>Das erwartet sie</h2>
@@ -129,7 +137,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-bottom: 40px;">
+                <div class="row bg-blue" style="margin-bottom: 40px;">
                     <div class="col-xs-12 col-lg-8 col-lg-offset-2">
                         <div class="box box-blue">
                             <h2>Das wünschen wir uns</h2>

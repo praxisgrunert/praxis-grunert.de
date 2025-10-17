@@ -653,14 +653,20 @@ body.aaron-illu .media-heading {
     opacity: 0.8;
 }
 
+.karriere .bg-beige {
+    background-color: #fbf7f3;
+}
+
 .karriere .box.box-beige {
     padding: 40px;
-    background-color: #fbf7f3;
+}
+
+.karriere .bg-blue {
+    background-color: rgba(76, 173, 211, 0.1);
 }
 
 .karriere .box.box-blue {
     padding: 40px;
-    background-color: rgba(76, 173, 211, 0.1);
 }
 
 /* Impressum */
